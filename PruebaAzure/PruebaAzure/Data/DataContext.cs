@@ -1,8 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using PruebaAzure.Data.Entities;
-namespace PruebaAzure.Data
+﻿namespace PruebaAzure.Data
 {
     using Microsoft.EntityFrameworkCore;
+    using PruebaAzure.Data.Entities;
 
     public class DataContext : DbContext
     {
@@ -11,6 +10,6 @@ namespace PruebaAzure.Data
         {
         }
 
-        public DbSet<PruebaAzure.Data.Entities.Estudiante> Estudiante { get; set; }
+        public DbSet<Estudiante> Estudiante { get; set; }
     }
 }
